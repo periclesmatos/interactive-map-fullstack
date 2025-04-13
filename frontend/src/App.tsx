@@ -6,7 +6,7 @@ export function App() {
   return (
     <>
       <header>
-        <h1>MAPA UNIFOR</h1>
+        <h1>Interative Map</h1>
       </header>
       <main>
         <InteractiveMap />

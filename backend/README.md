@@ -1,8 +1,17 @@
-# 🗺️ API de Marcadores
-Esta API permite gerenciar marcadores geográficos, oferecendo endpoints para criar, atualizar, listar e deletar marcadores.
+# 📌 API de Marcadores - Backend
+Este é o backend da aplicação Interactive Map, desenvolvido com FastAPI. Ele fornece endpoints RESTful para criação, leitura, atualização e exclusão de marcadores geográficos em um mapa interativo.
 
-## ✅ Pré-requisitos
-Antes de começar, certifique-se de que você possui o Python instalado em sua máquina.
+## ✅ Tecnologias Utilizadas
+- [Python 3.10+](https://www.python.org/)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [uvicorn](https://www.uvicorn.org/) (como servidor ASGI)
+- CORS Middleware
+- Pydantic
+- [Swagger UI](https://swagger.io/tools/swagger-ui/)
+
+## ⚙️ Pré-requisitos
+- Python 3.10 ou superior instalado na máquina
+- Gerenciador de pacotes `pip` ou `pipenv`
 
 ## 📁 Acessando o Diretório do Projeto Backend
 Abra o terminal e navegue até a pasta do `backend`:
@@ -10,7 +19,7 @@ Abra o terminal e navegue até a pasta do `backend`:
 cd backend
 ```
 
-## 🧪 Criando e Ativando o Ambiente Virtual
+## 🛠️ Criando e Ativando o Ambiente Virtual
 Crie um ambiente virtual para isolar as dependências do projeto:
 ```sh
 python -m venv venv
@@ -75,3 +84,6 @@ Se o front-end estiver hospedado em um domínio diferente, configure o CORS da s
 ## 🤝 Contribuição
 Sinta-se à vontade para abrir issues ou enviar pull requests com sugestões, correções ou melhorias.
 Sua contribuição será muito bem-vinda! 🚀
+
+📎 Recursos Relacionados
+[README principal do projeto](https://github.com/periclesmatos/interactive-map-fullstack/blob/main/README.md)

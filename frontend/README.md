@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# 🌍 Mapa Interativo - Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o front-end do projeto **Mapa Interativo**, uma aplicação React que consome a API de marcadores e exibe os pontos geográficos em um mapa do Google Maps.
 
-Currently, two official plugins are available:
+## 🧰 Tecnologias Utilizadas
+- ⚛️ React
+- 📦 Zustand (Gerenciamento de estado)
+- 🗺️ @react-google-maps/api (Integração com Google Maps)
+- 🎨 CSS Modules
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Pré-requisitos
+Antes de iniciar, você precisa ter:
+- Node.js instalado ([Baixe aqui](https://nodejs.org/pt))
+- A chave da API do Google Maps
+- A API de backend rodando (consulte o README do backend)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Acessando o Diretório do Projeto
+Abra o terminal e entre na pasta do front-end:
+```sh
+cd frontend
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🔑 Configurando a API Key do Google Maps
+1. Crie um arquivo `.env` na raiz do projeto (fora da pasta `src`).
+2. Adicione a variável abaixo:
+```env
+REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY_AQUI
 ```
+⚠️ **Atenção:** variáveis de ambiente no React com `create-react-app` devem começar com `REACT_APP_`.
+
+## 📦 Instalando Dependências
+Instale os pacotes necessários com o npm ou yarn:
+```sh
+npm install
+```
+
+## ▶️ Iniciando o Projeto
+Execute a aplicação:
+```sh
+npm start
+```
+O front-end estará disponível em:
+👉 `http://localhost:3000`
+
+## 🌐 Comunicação com a API
+O front-end faz requisições para a API via `fetch`. Certifique-se de que a API está acessível no endereço correto `http://127.0.0.1:8000`.

@@ -37,7 +37,7 @@ npm install
 ## ▶️ Iniciando o Projeto
 Execute a aplicação:
 ```sh
-npm start
+npm run dev
 ```
 O front-end estará disponível em:
 👉 `http://localhost:3000`

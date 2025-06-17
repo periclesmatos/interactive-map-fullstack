@@ -72,12 +72,7 @@ const InteractiveMap: React.FC = () => {
           <Marker
             position={userLocation}
             icon={{
-              path: google.maps.SymbolPath.CIRCLE, // Usando o ícone de círculo (bolinha)
-              fillColor: 'blue', // Cor de preenchimento
-              fillOpacity: 1, // Opacidade do preenchimento
-              strokeColor: 'white', // Cor da borda
-              strokeWeight: 2, // Peso da borda
-              scale: 6, // Tamanho do marcador (ajustável)
+              url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
             }}
             title='Sua localização'
           />

@@ -1,6 +1,6 @@
 import { MarkerType } from "../types/marker";
 
-const API_URL = "http://localhost:8000/marcadores"; // Substitua pela URL da sua API
+const API_URL = "https://marcadores-api.onrender.com/marcadores"; // Substitua pela URL da sua API
 
 // Função para buscar todos os marcadores
 export const getMarkers = async (): Promise<MarkerType[]> => {

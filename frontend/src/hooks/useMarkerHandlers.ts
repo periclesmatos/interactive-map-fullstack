@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getMarkers, updateMarker } from '../services/markerService';
-import { useMarkerStore } from '../store/markerStore';
-import { useMarkerFormStore } from '../store/FormStore';
+import { useMarkerStore } from '../stores/markerStore';
+import { useMarkerFormStore } from '../stores/FormStore';
 import { MarkerType } from '../types/marker';
 
 export const useMarkerHandlers = () => {

@@ -1,5 +1,5 @@
-import { useMarkerStore } from '../../store/markerStore';
-import { useMarkerFormStore } from '../../store/FormStore';
+import { useMarkerStore } from '../../stores/markerStore';
+import { useMarkerFormStore } from '../../stores/FormStore';
 import { postMarker } from '../../services/markerService';
 import { MarkerType } from '../../types/marker';
 import styles from './AddMarkerForm.module.css';

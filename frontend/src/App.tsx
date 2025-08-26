@@ -9,9 +9,13 @@ export function App() {
         <h1>Interative Map</h1>
       </header>
       <main>
-        <InteractiveMap />
-        <AddMarkerForm />
-        <MarkerList />
+        <section className="map-area">
+          <InteractiveMap />
+          <AddMarkerForm />
+        </section>
+        <section className="marker-list">
+          <MarkerList />
+        </section>
       </main>
     </>
   );
